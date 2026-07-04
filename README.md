@@ -1,6 +1,6 @@
 # Line Counter
 
-A cross-platform Python CLI tool that scans a project directory and reports the total lines of code grouped by detected programming language using a colorful Rich table.
+A simple, wibe coded cross-platform Python CLI tool that scans a project directory and reports the total lines of code grouped by detected programming language using a colorful Rich table.
 
 ## Features
 
