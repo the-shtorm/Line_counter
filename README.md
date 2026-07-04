@@ -10,7 +10,44 @@ A cross-platform Python CLI tool that scans a project directory and reports the 
 - Ignores generated lockfiles and package-manager artifacts such as `package-lock.json` and `yarn.lock`
 - Handles files with mixed or invalid encodings safely
 - Prints a polished summary table sorted by lines of code
-- Includes support for Arduino and Processing source files
+- Includes support for many source and documentation languages
+
+## Supported Languages
+
+The tool currently recognizes these languages and extensions:
+
+- Python: `.py`, `.pyi`
+- JavaScript: `.js`, `.jsx`
+- TypeScript: `.ts`, `.tsx`
+- HTML: `.html`, `.htm`
+- CSS / Sass: `.css`, `.scss`, `.sass`
+- Java: `.java`
+- Arduino: `.ino`
+- Processing: `.pde`, `.pyde`
+- LaTeX: `.tex`, `.latex`
+- BibTeX: `.bib`
+- Assembly: `.asm`, `.s`
+- Verilog / SystemVerilog: `.v`, `.vh`, `.sv`, `.svh`
+- AutoHotkey: `.ahk`
+- Godot: `.gd`, `.gdshader`
+- Kotlin: `.kt`, `.kts`
+- C / C++: `.c`, `.h`, `.cpp`, `.cc`, `.cxx`, `.hpp`, `.hh`
+- Go: `.go`
+- Rust: `.rs`
+- Ruby: `.rb`
+- PHP: `.php`
+- C#: `.cs`
+- Swift: `.swift`
+- Lua: `.lua`
+- Shell: `.sh`, `.bash`, `.zsh`
+- PowerShell: `.ps1`
+- SQL: `.sql`
+- JSON: `.json`
+- YAML: `.yaml`, `.yml`
+- TOML: `.toml`
+- INI: `.ini`, `.cfg`
+- Markdown: `.md`
+- reStructuredText: `.rst`
 
 ## Installation
 
