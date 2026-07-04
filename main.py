@@ -108,10 +108,27 @@ def should_skip_directory(path: Path) -> bool:
     return path.name in SKIP_DIRS or path.name.startswith(".")
 
 
+SKIP_FILENAMES = {
+    "package-lock.json",
+    "npm-shrinkwrap.json",
+    "yarn.lock",
+    "pnpm-lock.yaml",
+    "poetry.lock",
+    "Pipfile.lock",
+    "Cargo.lock",
+    "composer.lock",
+    "go.sum",
+    "requirements.txt",
+    "requirements-dev.txt",
+}
+
+
 def detect_language(path: Path) -> str | None:
     """Return the programming language for a file based on its extension."""
     suffix = path.suffix.lower()
     if suffix in {".txt", ".log"}:
+        return None
+    if path.name in SKIP_FILENAMES:
         return None
     return LANGUAGE_BY_EXTENSION.get(suffix)
 

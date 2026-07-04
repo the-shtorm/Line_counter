@@ -7,6 +7,7 @@ A cross-platform Python CLI tool that scans a project directory and reports the 
 - Recursively walks a target directory
 - Ignores common dependency and build folders such as `.git`, `node_modules`, `.venv`, `dist`, and `build`
 - Skips binary-like files and non-source text files such as `.txt` and `.log`
+- Ignores generated lockfiles and package-manager artifacts such as `package-lock.json` and `yarn.lock`
 - Handles files with mixed or invalid encodings safely
 - Prints a polished summary table sorted by lines of code
 - Includes support for Arduino and Processing source files
